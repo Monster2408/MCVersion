@@ -17,7 +17,7 @@
 
 <dependency>
     <groupId>xyz.mlserver</groupId>
-    <artifactId>MinecraftUtil</artifactId>
+    <artifactId>MCVersion</artifactId>
     <version>VERSION</version>
 </dependency>
 ```
