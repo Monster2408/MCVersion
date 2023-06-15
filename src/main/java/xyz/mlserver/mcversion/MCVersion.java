@@ -901,6 +901,11 @@ public enum MCVersion {
     private static final Map<Integer, List<MCVersion>> cachedProtocolVersions = new HashMap<>();
     private static final Map<Integer, List<MCVersion>> cachedDataVersions = new HashMap<>();
 
+    /**
+     * VersionType from MCVersion name
+     * @param name MCVersion name
+     * @return VersionType
+     */
     public static VersionType getFromMCVersionName(String name) {
         boolean releaseCandidate = name.toUpperCase().contains("RC");
         boolean prerelease = name.toUpperCase().contains("PRE");
@@ -913,6 +918,11 @@ public enum MCVersion {
         else                  return VersionType.RELEASE;
     }
 
+    /**
+     * MCVersion List from protocol version
+     * @param protocolVersion protocol version
+     * @return MCVersion List
+     */
     public static List<MCVersion> getByProtocolVersions(int protocolVersion) {
         if (cachedProtocolVersions.get(protocolVersion) != null) return cachedProtocolVersions.get(protocolVersion);
         List<MCVersion> list = new ArrayList<>();
@@ -924,6 +934,11 @@ public enum MCVersion {
         return list;
     }
 
+    /**
+     * MCVersion from protocol version
+     * @param protocolVersion protocol version
+     * @return MCVersion
+     */
     public static MCVersion getByProtocolVersion(int protocolVersion) {
         List<MCVersion> list = getByProtocolVersions(protocolVersion);
         if (list.get(0) == null) return UNKNOWN;
