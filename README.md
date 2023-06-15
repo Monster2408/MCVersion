@@ -25,7 +25,14 @@
 ## Using with Gradle
 
 ```gradle
-// 
+repositories {
+    ...
+    maven { url 'https://jitpack.io' }
+}
+
+dependencies {
+    implementation 'xyz.mlserver:MCVersion:VERSION'
+}
 ```
 
 ## Get MCVersion from ProtocolVersion
