@@ -5,6 +5,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * Minecraftのバージョンを表す列挙型
+ */
 public enum MCVersion {
 
     /*
@@ -886,6 +889,18 @@ public enum MCVersion {
 
     public boolean isBeta() {
         return type == VersionType.BETA;
+    }
+
+    public boolean isPreRelease() {
+        return type == VersionType.PRERELEASE;
+    }
+
+    public boolean isUnknown() {
+        return type == VersionType.UNKNOWN;
+    }
+
+    public boolean isDummy() {
+        return type == VersionType.DUMMY;
     }
 
     @Override

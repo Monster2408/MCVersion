@@ -16,6 +16,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <!-- 認証情報を読み込む（settings.xml） -->
         <github.global.server>github</github.global.server>
+        <maven.build.timestamp.format>yyyy</maven.build.timestamp.format>
     </properties>
 
     <build>
@@ -31,7 +32,7 @@
                     <encoding>UTF-8</encoding>
                     <docencoding>UTF-8</docencoding>
                     <charset>UTF-8</charset>
-                    <bottom><![CDATA[<p class="legalCopy"><small>Copyright &#169; 2022. <a href="https://monster2408.com">Monster2408</a>.</small></p>]]></bottom>
+                    <bottom><![CDATA[<p class="legalCopy"><small>Copyright &#169; ${maven.build.timestamp}. <a href="https://monster2408.com">Monster2408</a>.</small></p>]]></bottom>
                     <header><![CDATA[<a href="https://docs.mlserver.jp"><i class="fa-solid fa-house-chimney"></i>HOME</a>]]></header>
                     <top><![CDATA[
                         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">

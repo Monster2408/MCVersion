@@ -3,9 +3,18 @@
 [![](https://jitpack.io/v/xyz.mlserver/MCVersion.svg)](https://jitpack.io/#xyz.mlserver/MCVersion)
 [![Twitter](https://badgen.net/twitter/follow/monster_2408?icon=twitter)](https://twitter.com/monster_2408)
 [![Discord](https://discord.com/api/guilds/556844677115150366/widget.png)](https://discord.mlserver.xyz)
-[Website](https://monster2408.com)
 
-[Java Docs](https://docs.mlserver.jp/MCVersion/)
+[Website](https://monster2408.com) | [Java Docs](https://docs.mlserver.jp/MCVersion/)
+
+
+## Get MCVersion from ProtocolVersion
+
+You can recognize the version of the player based on the ProtocolVersion obtained by ViaVersion, etc.
+```java
+MCVersion version = MCVersion.getByProtocolVersion(763);
+
+System.out.println(version.getName()); // 1.20.1
+```
 
 ## Using with Maven
 
@@ -35,16 +44,8 @@ dependencies {
 }
 ```
 
-## Get MCVersion from ProtocolVersion
-
-```java
-MCVersion version = MCVersion.getByProtocolVersion(763);
-
-System.out.println(version.getName()); // 1.20.1
-```
-
 ### Developer
-## JavaDoc Command
+#### JavaDoc Command
 ```shell
 mvn javadoc:javadoc
 ```
