@@ -10,6 +10,7 @@ public enum MCVersion {
     /*
         参考サイト
         https://minecraft.fandom.com/wiki/Protocol_version#Java_Edition
+        https://minecraft.fandom.com/ja/wiki/%E3%83%97%E3%83%AD%E3%83%88%E3%82%B3%E3%83%AB%E3%83%90%E3%83%BC%E3%82%B8%E3%83%A7%E3%83%B3#Java_Edition
 
         ダミーバージョン例
         v1_18_2(-1, -1, "1.18.2", VersionType.DUMMY)
