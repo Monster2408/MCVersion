@@ -18,17 +18,56 @@ public enum MCVersion {
         ダミーバージョン例
         v1_18_2(-1, -1, "1.18.2", VersionType.DUMMY)
     */
+
+    /**
+     * 以下データを元に作成
+     *
+     * Java Edition 23w42a	0x4000009D	3684
+     * Java Edition 23w41a	0x4000009C	3681
+     * Java Edition 23w40a	0x4000009A	3679
+     * Java Edition 1.20.2	764	3578
+     * Java Edition 1.20.2 Release Candidate 2	0x40000099	3577
+     * Java Edition 1.20.2 Release Candidate 1	0x40000098	3576
+     * Java Edition 1.20.2 Pre-Release 4	0x40000097	3575
+     * Java Edition 1.20.2 Pre-Release 3	0x40000096	3574
+     * Java Edition 1.20.2 Pre-release 2	0x40000095	3573
+     * Java Edition 1.20.2 Pre-release 1	0x40000094	3572
+     * Java Edition 23w35a	0x40000093	3571
+     * Java Edition 23w33a	0x40000092	3570
+     * Java Edition 23w32a	0x40000091	3569
+     * Java Edition 23w31a	0x40000090	3567
+     * Java Edition 1.20.1	763	3465
+     */
+
+    v1_20_3(-1,-1,"1.20.3",VersionType.DUMMY),
+    SNAPSHOT_23W42A(0x4000009D,3684,v1_20_3,"snapshot_23w42a",VersionType.SNAPSHOT),
+    SNAPSHOT_23W41A(0x4000009C,3681,v1_20_3,"snapshot_23w41a",VersionType.SNAPSHOT),
+    SNAPSHOT_23W40A(0x4000009A,3679,v1_20_3,"snapshot_23w40a",VersionType.SNAPSHOT),
+
+
+    v1_20_2(764,3578,"1.20.2",VersionType.RELEASE),
+    v1_20_2_RC2(0x40000099,3577,v1_20_2,"1.20.2_rc2",VersionType.RELEASE_CANDIDATE),
+    v1_20_2_RC1(0x40000098,3576,v1_20_2,"1.20.2_rc1",VersionType.RELEASE_CANDIDATE),
+    v1_20_2_PRE4(0x40000097,3575,v1_20_2,"1.20.2_pre4",VersionType.PRERELEASE),
+    v1_20_2_PRE3(0x40000096,3574,v1_20_2,"1.20.2_pre3",VersionType.PRERELEASE),
+    v1_20_2_PRE2(0x40000095,3573,v1_20_2,"1.20.2_pre2",VersionType.PRERELEASE),
+    v1_20_2_PRE1(0x40000094,3572,v1_20_2,"1.20.2_pre1",VersionType.PRERELEASE),
+    SNAPSHOT_23W35A(0x40000093,3571,v1_20_2,"snapshot_23w35a",VersionType.SNAPSHOT),
+    SNAPSHOT_23W33A(0x40000092,3570,v1_20_2,"snapshot_23w33a",VersionType.SNAPSHOT),
+    SNAPSHOT_23W32A(0x40000091,3569,v1_20_2,"snapshot_23w32a",VersionType.SNAPSHOT),
+    SNAPSHOT_23W31A(0x40000090,3567,v1_20_2,"snapshot_23w31a",VersionType.SNAPSHOT),
+
     v1_20_1(763, 3465, "1.20.1", VersionType.RELEASE),
-    v1_20_1_RC1(0x4000008E, 3464, v1_20_1, "v1.20.1_rc1", VersionType.RELEASE_CANDIDATE),
+    v1_20_1_RC1(0x4000008E, 3464, v1_20_1, "1.20.1_rc1", VersionType.RELEASE_CANDIDATE),
     v1_20(763, 3463, "1.20", VersionType.RELEASE),
-    v1_20_RC1(0x4000008D, 3462, v1_20, "v1.20_rc1", VersionType.RELEASE_CANDIDATE),
-    v1_20_PRE7(0x4000008C, 3461, v1_20, "v1.20_pre7", VersionType.PRERELEASE),
-    v1_20_PRE6(0x4000008B, 3460, v1_20, "v1.20_pre6", VersionType.PRERELEASE),
-    v1_20_PRE5(0x4000008A, 3458, v1_20, "v1.20_pre5", VersionType.PRERELEASE),
-    v1_20_PRE4(0x40000089, 3457, v1_20, "v1.20_pre4", VersionType.PRERELEASE),
-    v1_20_PRE3(0x40000088, 3456, v1_20, "v1.20_pre3", VersionType.PRERELEASE),
-    v1_20_PRE2(0x40000087, 3455, v1_20, "v1.20_pre2", VersionType.PRERELEASE),
-    v1_20_PRE1(0x40000086, 3454, v1_20, "v1.20_pre1", VersionType.PRERELEASE),
+    v1_20_RC1(0x4000008D, 3462, v1_20, "1.20_rc1", VersionType.RELEASE_CANDIDATE),
+    v1_20_PRE7(0x4000008C, 3461, v1_20, "1.20_pre7", VersionType.PRERELEASE),
+    v1_20_PRE6(0x4000008B, 3460, v1_20, "1.20_pre6", VersionType.PRERELEASE),
+    v1_20_PRE5(0x4000008A, 3458, v1_20, "1.20_pre5", VersionType.PRERELEASE),
+    v1_20_PRE4(0x40000089, 3457, v1_20, "1.20_pre4", VersionType.PRERELEASE),
+    v1_20_PRE3(0x40000088, 3456, v1_20, "1.20_pre3", VersionType.PRERELEASE),
+    v1_20_PRE2(0x40000087, 3455, v1_20, "1.20_pre2", VersionType.PRERELEASE),
+    v1_20_PRE1(0x40000086, 3454, v1_20, "1.20_pre1", VersionType.PRERELEASE),
     SNAPSHOT_23W18A(0x40000085, 3453, v1_20, "snapshot_23w18a", VersionType.SNAPSHOT),
     SNAPSHOT_23W17A(0x40000084, 3452, v1_20, "snapshot_23w17a", VersionType.SNAPSHOT),
     SNAPSHOT_23W16A(0x40000083, 3449, v1_20, "snapshot_23w16a", VersionType.SNAPSHOT),
