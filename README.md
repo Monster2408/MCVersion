@@ -11,9 +11,14 @@
 
 You can recognize the version of the player based on the ProtocolVersion obtained by ViaVersion, etc.
 ```java
-MCVersion version = MCVersion.getByProtocolVersion(763);
+import xyz.mlserver.mcversion.MCVersion;
 
-System.out.println(version.getName()); // 1.20.1
+public class Example {
+    public static void example() {
+        MCVersion version = MCVersion.fromProtocolVersion(47);
+        System.out.println(version);
+    }
+}
 ```
 
 ## Using with Maven
