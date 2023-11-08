@@ -19,27 +19,10 @@ public enum MCVersion {
         v1_18_2(-1, -1, "1.18.2", VersionType.DUMMY)
     */
 
-    /**
-     * 以下データを元に作成
-     *
-     * Java Edition 23w42a	0x4000009D	3684
-     * Java Edition 23w41a	0x4000009C	3681
-     * Java Edition 23w40a	0x4000009A	3679
-     * Java Edition 1.20.2	764	3578
-     * Java Edition 1.20.2 Release Candidate 2	0x40000099	3577
-     * Java Edition 1.20.2 Release Candidate 1	0x40000098	3576
-     * Java Edition 1.20.2 Pre-Release 4	0x40000097	3575
-     * Java Edition 1.20.2 Pre-Release 3	0x40000096	3574
-     * Java Edition 1.20.2 Pre-release 2	0x40000095	3573
-     * Java Edition 1.20.2 Pre-release 1	0x40000094	3572
-     * Java Edition 23w35a	0x40000093	3571
-     * Java Edition 23w33a	0x40000092	3570
-     * Java Edition 23w32a	0x40000091	3569
-     * Java Edition 23w31a	0x40000090	3567
-     * Java Edition 1.20.1	763	3465
-     */
-
     v1_20_3(-1,-1,"1.20.3",VersionType.DUMMY),
+    SNAPSHOT_23W44A(0x400000A1,3688,v1_20_3,"snapshot_23w44a",VersionType.SNAPSHOT),
+    SNAPSHOT_23W43B(0x400000A0,3687,v1_20_3,"snapshot_23w43b",VersionType.SNAPSHOT),
+    SNAPSHOT_23W43A(0x4000009F,3686,v1_20_3,"snapshot_23w43a",VersionType.SNAPSHOT),
     SNAPSHOT_23W42A(0x4000009D,3684,v1_20_3,"snapshot_23w42a",VersionType.SNAPSHOT),
     SNAPSHOT_23W41A(0x4000009C,3681,v1_20_3,"snapshot_23w41a",VersionType.SNAPSHOT),
     SNAPSHOT_23W40A(0x4000009A,3679,v1_20_3,"snapshot_23w40a",VersionType.SNAPSHOT),
