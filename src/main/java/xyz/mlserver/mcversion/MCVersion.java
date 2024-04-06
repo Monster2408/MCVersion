@@ -19,7 +19,21 @@ public enum MCVersion {
         v1_18_2(-1, -1, "1.18.2", VersionType.DUMMY)
     */
 
-    v1_20_3(-1,-1,"1.20.3",VersionType.DUMMY),
+    v1_20_5(-1,-1,"1.20.5",VersionType.DUMMY),
+    SNAPSHOT_24W07A(0x400000B1,3817,v1_20_5,"snapshot_24w07a",VersionType.SNAPSHOT),
+    SNAPSHOT_24W06A(0x400000B0,3815,v1_20_5,"snapshot_24w06a",VersionType.SNAPSHOT),
+    SNAPSHOT_24W05B(0x400000AF,3811,v1_20_5,"snapshot_24w05b",VersionType.SNAPSHOT),
+    SNAPSHOT_24W05A(0x400000AD,3809,v1_20_5,"snapshot_24w05a",VersionType.SNAPSHOT),
+    SNAPSHOT_24W04A(0x400000AD,3806,v1_20_5,"snapshot_24w04a",VersionType.SNAPSHOT),
+    SNAPSHOT_24W03B(0x400000AC,3805,v1_20_5,"snapshot_24w03b",VersionType.SNAPSHOT),
+    SNAPSHOT_24W03A(0x400000AB,3804,v1_20_5,"snapshot_24w03a",VersionType.SNAPSHOT),
+    SNAPSHOT_23W51B(0x400000AA,3802,v1_20_5,"snapshot_23w51b",VersionType.SNAPSHOT),
+    SNAPSHOT_23W51A(0x400000A9,3801,v1_20_5,"snapshot_23w51a",VersionType.SNAPSHOT),
+
+    v1_20_4(765,3700,"1.20.4",VersionType.RELEASE),
+    v1_20_4_RC1(0x400000A9,3699,v1_20_4,"1.20.4_rc1",VersionType.RELEASE_CANDIDATE),
+
+    v1_20_3(765,3698,"1.20.3",VersionType.RELEASE),
     v1_20_3_RC1(0x400000A8,3697,v1_20_3,"1.20.3_rc1",VersionType.RELEASE_CANDIDATE),
     v1_20_3_PRE4(0x400000A7,3696,v1_20_3,"1.20.3_pre4",VersionType.PRERELEASE),
     v1_20_3_PRE3(0x400000A6,3695,v1_20_3,"1.20.3_pre3",VersionType.PRERELEASE),
