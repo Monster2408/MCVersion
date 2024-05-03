@@ -5,7 +5,7 @@
 
 [![](https://jitpack.io/v/xyz.mlserver/MCVersion.svg)](https://jitpack.io/#xyz.mlserver/MCVersion)
 [![Twitter](https://img.shields.io/twitter/follow/monster_2408?style=social)](https://twitter.com/monster_2408)
-[![Discord](https://discord.com/api/guilds/1134139990885027890/widget.png)](https://discord.gg/pkXnefCFsX)
+<!--[![Discord](https://discord.com/api/guilds/1134139990885027890/widget.png)](https://discord.gg/pkXnefCFsX)-->
 
 </div>
 
