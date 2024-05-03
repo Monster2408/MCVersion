@@ -4,7 +4,7 @@
 [![Twitter](https://img.shields.io/twitter/follow/monster_2408?style=social)](https://twitter.com/monster_2408)
 [![Discord](https://discord.com/api/guilds/556844677115150366/widget.png)](https://discord.mlserver.xyz)
 
-[Website](https://monster2408.com) | [Java Docs](https://docs.mlserver.jp/MCVersion/)
+[Website](https://monster2408.com) | [Java Docs](https://docs.monster2408.com/MCVersion/)
 
 
 ## Get MCVersion from ProtocolVersion
@@ -19,6 +19,22 @@ public class Example {
         System.out.println(version);
     }
 }
+```
+
+## Example with ViaVersion
+```java
+import xyz.mlserver.mcversion.MCVersion;
+
+public class Example implements Listener {
+    @EventHandler
+    public void on(PlayerJoinEvent e) {
+        Player player = e.getPlayer();
+        int protocolVersion = Via.getAPI().getPlayerVersion(uuid);
+        version = MCVersion.getByProtocolVersion(protocolVersion).getName();
+        System.out.println(version);
+    }
+}
+
 ```
 
 ## Using with Maven
@@ -40,7 +56,6 @@ public class Example {
 
 ```gradle
 repositories {
-    ...
     maven { url 'https://jitpack.io' }
 }
 
