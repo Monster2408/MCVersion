@@ -4,7 +4,7 @@
 [![Twitter](https://img.shields.io/twitter/follow/monster_2408?style=social)](https://twitter.com/monster_2408)
 [![Discord](https://discord.com/api/guilds/1134139990885027890/widget.png)](https://discord.gg/pkXnefCFsX)
 
-[Website](https://monster2408.com) | [Java Docs](https://docs.monster2408.com/MCVersion/)
+[SpigotMC Thread](https://www.spigotmc.org/threads/mcversion-minecraft-version-data-api.646198/) | [Website](https://monster2408.com) | [Java Docs](https://docs.monster2408.com/MCVersion/)
 
 
 ## Get MCVersion from ProtocolVersion
