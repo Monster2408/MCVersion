@@ -23,6 +23,8 @@ public enum MCVersion {
     */
 
     v1_22(-1,-1,"1.22",VersionType.DUMMY),
+    v1_21_1(767,3955,"1.21.1",VersionType.RELEASE),
+    v1_21_1_RC1(0x400000CC,3954,v1_21_1,"1.21.1_rc1",VersionType.RELEASE_CANDIDATE),
     v1_21(767,3953,"1.21",VersionType.RELEASE),
     v1_21_RC1(0x400000CB,3952,v1_21,"1.21_rc1",VersionType.RELEASE_CANDIDATE),
     v1_21_PRE4(0x400000CA,3951,v1_21,"1.21_pre4",VersionType.PRERELEASE),
