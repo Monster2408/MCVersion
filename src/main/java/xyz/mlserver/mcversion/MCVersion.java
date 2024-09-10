@@ -23,6 +23,10 @@ public enum MCVersion {
     */
 
     v1_22(-1,-1,"1.22",VersionType.DUMMY),
+    SNAPSHOT_24W36A(0x400000D0,4063,v1_22,"snapshot_24w36a",VersionType.SNAPSHOT),
+    SNAPSHOT_24W35B(0x400000CF,4062,v1_22,"snapshot_24w35b",VersionType.SNAPSHOT),
+    SNAPSHOT_24W34A(0x400000CE,4060,v1_22,"snapshot_24w34a",VersionType.SNAPSHOT),
+    SNAPSHOT_24W33A(0x400000CD,4058,v1_22,"snapshot_24w33a",VersionType.SNAPSHOT),
     v1_21_1(767,3955,"1.21.1",VersionType.RELEASE),
     v1_21_1_RC1(0x400000CC,3954,v1_21_1,"1.21.1_rc1",VersionType.RELEASE_CANDIDATE),
     v1_21(767,3953,"1.21",VersionType.RELEASE),
